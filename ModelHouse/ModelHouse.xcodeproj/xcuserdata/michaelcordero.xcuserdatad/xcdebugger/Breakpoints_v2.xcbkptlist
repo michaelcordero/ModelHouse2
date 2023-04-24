@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CEDDE706-91E7-4194-B53C-CFF6FE1454BD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D23D3A5-EF84-46A1-80DA-408CD828ACD0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/Content/ContentViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "loadAllSymbols()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A098E7F-FDC0-4A30-90EE-62A9E9043689"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/Tabs/Watchlist.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "Watchlist"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "3A098E7F-FDC0-4A30-90EE-62A9E9043689 - 66a163a0d5cddc42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of ModelHouse.Watchlist.model : ModelHouse.ContentViewModel"
+                  moduleName = "ModelHouse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelcordero/Development/cen-5011/MH2%202/ModelHouse/Shared/Tabs/Watchlist.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "3A098E7F-FDC0-4A30-90EE-62A9E9043689 - 6b512d996cc1c431"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ModelHouse.Watchlist.init() -&gt; ModelHouse.Watchlist"
+                  moduleName = "ModelHouse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelcordero/Development/cen-5011/MH2%202/ModelHouse/Shared/Tabs/Watchlist.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
