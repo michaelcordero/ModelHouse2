@@ -11,4 +11,8 @@ enum Stocks: String {
     case TSLA = "tsla"
     case AAPL = "aapl"
     case JPM = "jpm"
+    
+    static func fromString(_ string: String) -> Stocks? {
+        return Stocks(rawValue: string)
+    }
 }

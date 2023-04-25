@@ -64,6 +64,7 @@
 		734A3D6529F74AA900F051D1 /* ModelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelName.swift; sourceTree = "<group>"; };
 		734A3D6629F74AA900F051D1 /* ModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		734A3D6E29F74B8C00F051D1 /* Stocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
+		734A3D7029F75F2800F051D1 /* ModelHouse--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ModelHouse--iOS--Info.plist"; sourceTree = "<group>"; };
 		73D3AD9129F745B10076B2AC /* SingletonContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonContentViewModel.swift; sourceTree = "<group>"; };
 		DDF905E629EFCDDD00963709 /* ModelHouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHouseApp.swift; sourceTree = "<group>"; };
 		DDF905E729EFCDDD00963709 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		DDF905DE29EFCDDC00963709 = {
 			isa = PBXGroup;
 			children = (
+				734A3D7029F75F2800F051D1 /* ModelHouse--iOS--Info.plist */,
 				DDF905E329EFCDDD00963709 /* Shared */,
 				DDF905F529EFCDDE00963709 /* macOS */,
 				DDF905FE29EFCDDE00963709 /* Tests iOS */,
@@ -607,6 +609,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ModelHouse--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -636,6 +639,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ModelHouse--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

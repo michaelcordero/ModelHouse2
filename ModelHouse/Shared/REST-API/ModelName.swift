@@ -11,4 +11,8 @@ enum ModelName: String {
     case DeepQ = "dqn"
     case DynaQ = "dynaq"
     case SentK = "sentk"
+    
+    static func fromString(_ string: String) -> ModelName? {
+        return ModelName(rawValue: string)
+    }
 }
