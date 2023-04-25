@@ -18,6 +18,6 @@ extension ModelOptions {
     
     ModelOptions(option: "DynaQ"),
     ModelOptions(option: "DQN"),
-    ModelOptions(option: "SentK")
+    ModelOptions(option: "SentK"),
     ]
 }

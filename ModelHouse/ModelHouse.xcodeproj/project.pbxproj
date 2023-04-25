@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		734A3D6829F74AA900F051D1 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734A3D6429F74AA900F051D1 /* ModelManager.swift */; };
+		734A3D6929F74AA900F051D1 /* ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734A3D6529F74AA900F051D1 /* ModelName.swift */; };
+		734A3D6A29F74AA900F051D1 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734A3D6629F74AA900F051D1 /* ModelType.swift */; };
+		734A3D6D29F74B2900F051D1 /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 734A3D6C29F74B2900F051D1 /* ZipArchive */; };
+		734A3D6F29F74B8C00F051D1 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734A3D6E29F74B8C00F051D1 /* Stocks.swift */; };
 		73D3AD9229F745B10076B2AC /* SingletonContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D3AD9129F745B10076B2AC /* SingletonContentViewModel.swift */; };
 		DDF9060029EFCDDE00963709 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF905FF29EFCDDE00963709 /* Tests_iOS.swift */; };
 		DDF9060229EFCDDE00963709 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9060129EFCDDE00963709 /* Tests_iOSLaunchTests.swift */; };
@@ -55,6 +60,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		734A3D6429F74AA900F051D1 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		734A3D6529F74AA900F051D1 /* ModelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelName.swift; sourceTree = "<group>"; };
+		734A3D6629F74AA900F051D1 /* ModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		734A3D6E29F74B8C00F051D1 /* Stocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
+		734A3D7029F75F2800F051D1 /* ModelHouse--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ModelHouse--iOS--Info.plist"; sourceTree = "<group>"; };
 		73D3AD9129F745B10076B2AC /* SingletonContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonContentViewModel.swift; sourceTree = "<group>"; };
 		DDF905E629EFCDDD00963709 /* ModelHouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHouseApp.swift; sourceTree = "<group>"; };
 		DDF905E729EFCDDD00963709 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734A3D6D29F74B2900F051D1 /* ZipArchive in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +129,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73D3AD9329F7499C0076B2AC /* REST-API */ = {
+			isa = PBXGroup;
+			children = (
+				734A3D6E29F74B8C00F051D1 /* Stocks.swift */,
+				734A3D6429F74AA900F051D1 /* ModelManager.swift */,
+				734A3D6529F74AA900F051D1 /* ModelName.swift */,
+				734A3D6629F74AA900F051D1 /* ModelType.swift */,
+			);
+			path = "REST-API";
+			sourceTree = "<group>";
+		};
 		DDF905DE29EFCDDC00963709 = {
 			isa = PBXGroup;
 			children = (
+				734A3D7029F75F2800F051D1 /* ModelHouse--iOS--Info.plist */,
 				DDF905E329EFCDDD00963709 /* Shared */,
 				DDF905F529EFCDDE00963709 /* macOS */,
 				DDF905FE29EFCDDE00963709 /* Tests iOS */,
@@ -132,6 +155,7 @@
 		DDF905E329EFCDDD00963709 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				73D3AD9329F7499C0076B2AC /* REST-API */,
 				DDF9063629EFD71000963709 /* ModelHouseData.xcdatamodeld */,
 				DDF905E629EFCDDD00963709 /* ModelHouseApp.swift */,
 				DDF9064329F079BF00963709 /* Tabs */,
@@ -192,13 +216,13 @@
 		DDF9062A29EFD07200963709 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				73D3AD9129F745B10076B2AC /* SingletonContentViewModel.swift */,
 				DDF905E729EFCDDD00963709 /* ContentView.swift */,
 				DDF9062B29EFD09A00963709 /* SplashScreenView.swift */,
 				DDF9062D29EFD0BC00963709 /* ContentViewModel.swift */,
 				DDF9062F29EFD0DD00963709 /* LineChart.swift */,
 				DDF9064429F5D2B200963709 /* StockView.swift */,
 				DDF9064C29F607FD00963709 /* ModelMenu */,
-				73D3AD9129F745B10076B2AC /* SingletonContentViewModel.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -249,6 +273,9 @@
 			dependencies = (
 			);
 			name = "ModelHouse (iOS)";
+			packageProductDependencies = (
+				734A3D6C29F74B2900F051D1 /* ZipArchive */,
+			);
 			productName = "ModelHouse (iOS)";
 			productReference = DDF905EE29EFCDDE00963709 /* ModelHouse.app */;
 			productType = "com.apple.product-type.application";
@@ -341,6 +368,9 @@
 				Base,
 			);
 			mainGroup = DDF905DE29EFCDDC00963709;
+			packageReferences = (
+				734A3D6B29F74B2900F051D1 /* XCRemoteSwiftPackageReference "ZipArchive" */,
+			);
 			productRefGroup = DDF905EF29EFCDDE00963709 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -396,6 +426,7 @@
 				DDF9061129EFCDDF00963709 /* ModelHouseApp.swift in Sources */,
 				DDF9062929EFD03200963709 /* APIkey.swift in Sources */,
 				DDF9063F29F06AC700963709 /* Trade.swift in Sources */,
+				734A3D6F29F74B8C00F051D1 /* Stocks.swift in Sources */,
 				DDF9063B29F06AA500963709 /* Home.swift in Sources */,
 				DDF9061529EFCDDF00963709 /* Persistence.swift in Sources */,
 				DDF9062E29EFD0BC00963709 /* ContentViewModel.swift in Sources */,
@@ -404,10 +435,13 @@
 				DDF9063029EFD0DD00963709 /* LineChart.swift in Sources */,
 				DDF9061329EFCDDF00963709 /* ContentView.swift in Sources */,
 				DDF9064529F5D2B200963709 /* StockView.swift in Sources */,
+				734A3D6929F74AA900F051D1 /* ModelName.swift in Sources */,
 				DDF9064B29F6067F00963709 /* DropdownMenuListRow.swift in Sources */,
 				DDF9062C29EFD09A00963709 /* SplashScreenView.swift in Sources */,
 				DDF9063529EFD13400963709 /* StockData.swift in Sources */,
+				734A3D6829F74AA900F051D1 /* ModelManager.swift in Sources */,
 				DDF9063D29F06ABB00963709 /* Watchlist.swift in Sources */,
+				734A3D6A29F74AA900F051D1 /* ModelType.swift in Sources */,
 				DDF9063829EFD71000963709 /* ModelHouseData.xcdatamodeld in Sources */,
 				DDF9064929F6055300963709 /* DropdownMenuList.swift in Sources */,
 			);
@@ -575,6 +609,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ModelHouse--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -604,6 +639,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ModelHouse--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -801,6 +837,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		734A3D6B29F74B2900F051D1 /* XCRemoteSwiftPackageReference "ZipArchive" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZipArchive/ZipArchive.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		734A3D6C29F74B2900F051D1 /* ZipArchive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 734A3D6B29F74B2900F051D1 /* XCRemoteSwiftPackageReference "ZipArchive" */;
+			productName = ZipArchive;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DDF9063629EFD71000963709 /* ModelHouseData.xcdatamodeld */ = {
