@@ -1,3 +1,1 @@
-# MH2
-# MH2
-# MH2
+# ModelHouse is an application that allows users to examine model performance when prediction stock prices.
