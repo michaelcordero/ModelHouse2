@@ -13,6 +13,8 @@ struct DropDown: View {
     
     let placeHolder: String
     let options: [ModelOptions]
+    let action: ((ModelOptions) -> Void)?
+
     
     var body: some View {
         
@@ -48,7 +50,11 @@ struct DropDown: View {
                         DropdownMenuList(options: self.options) { option in
                             self.isOptionPresented = false
                             self.selectedOption = option
-                            
+                            guard let action = action else {
+                                print("closure failed!")
+                                return
+                            }
+                            action(selectedOption ?? ModelOptions.init(option: "None"))
                         }
                     }
                 }
@@ -68,7 +74,8 @@ struct DropDown_Previews: PreviewProvider {
         DropDown(
             selectedOption: .constant(nil),
             placeHolder: "Select your model",
-            options: ModelOptions.testingAllModel
+            options: ModelOptions.testingAllModel,
+            action: {_ in }
         )
     }
 }

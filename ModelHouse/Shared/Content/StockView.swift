@@ -36,8 +36,7 @@ struct StockView: View {
             HStack {
                 DropDown(selectedOption: self.$models,
                          placeHolder: "Select Your Model",
-                         options: ModelOptions.testingAllModel)
-                
+                         options: ModelOptions.testingAllModel, action: { print($0)})
                 Text(models?.option ?? "")
                 Spacer()
             }
